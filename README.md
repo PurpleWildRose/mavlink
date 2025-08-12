@@ -108,6 +108,14 @@ Date:   Wed Aug 6 10:33:33 2025 +0200
 
 # GUI
 
+'''
+sudo apt install python3-tk
+
+git clone XXX
+
+sudo apt install python3-pip
+'''
+
 * 用户自定义的消息都在message_definitions/v1里面，所有依赖于common.xml的都需要放到同级目录下
 
 '''
