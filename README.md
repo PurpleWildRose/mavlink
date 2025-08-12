@@ -106,15 +106,19 @@ Date:   Wed Aug 6 10:33:33 2025 +0200
     
     Co-authored-by: Hamish Willee <hamishwillee@gmail.com>
 
+# GUI
+
 * 用户自定义的消息都在message_definitions/v1里面，所有依赖于common.xml的都需要放到同级目录下
+
 '''
 python -m mavgenerate   # GUI operation
 '''
 
-
+# Command Line Tool 
 * mavgen.py 是一个命令行工具,用于生成用于各种编程语言的 MAVLink 库。
 您可以从 mavlink 目录运行 mavgen。但是,如果您在 mavlink 目录之外,则需要将 mavlink 目录添加到 PYTHONPATH 环境变量。
 * Mavgen是Mavgenerate使用的后端。
+
 '''
 python3 -m pymavlink.tools.mavgen --lang=C --wire-protocol=2.0 --output=generated/include/mavlink/v2.0 message_definitions/v1.0/your_custom_dialect.xml
 '''
